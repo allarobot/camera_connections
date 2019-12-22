@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CS</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetMaximumSize</enum>
+   </property>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>1</number>
+     </property>
+     <property name="rightMargin">
+      <number>1</number>
+     </property>
+     <property name="bottomMargin">
+      <number>1</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1,1,1,1">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="line_workorder">
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhHiddenText</set>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string extracomment="ddd"/>
+         </property>
+         <property name="placeholderText">
+          <string>work order number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="line_partnumber">
+         <property name="placeholderText">
+          <string>part number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="line_serialnumber">
+         <property name="placeholderText">
+          <string>serial number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="line_operatornumber">
+         <property name="placeholderText">
+          <string>operator number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QComboBox" name="line_process">
+         <item>
+          <property name="text">
+           <string>1070X</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1080</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>9000</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+         <item>
+          <widget class="QLabel" name="imageview">
+           <property name="maximumSize">
+            <size>
+             <width>1000</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Display</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_status">
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,1,1,1,3">
+         <item>
+          <widget class="QPushButton" name="btn_start">
+           <property name="text">
+            <string>Live</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_led">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:on { background-color: rgb(0, 255, 0) }
+QPushButton:off { background-color: rgb(255, 0, 0) }
+</string>
+           </property>
+           <property name="text">
+            <string>LED</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_configure">
+           <property name="text">
+            <string>Configure</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="text_comment"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_save">
+           <property name="text">
+            <string>Save Picture</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="list_imagename"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>line_workorder</tabstop>
+  <tabstop>line_partnumber</tabstop>
+  <tabstop>line_serialnumber</tabstop>
+  <tabstop>line_operatornumber</tabstop>
+  <tabstop>line_process</tabstop>
+  <tabstop>btn_led</tabstop>
+  <tabstop>btn_configure</tabstop>
+  <tabstop>btn_save</tabstop>
+  <tabstop>list_imagename</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>list_imagename</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>Dialog</receiver>
+   <slot>getimagename()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>819</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>749</x>
+     <y>744</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>getimagename()</slot>
+ </slots>
+</ui>
