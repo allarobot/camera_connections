@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/basler_cam.iml" filepath="$PROJECT_DIR$/.idea/basler_cam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/camera_connections.iml" filepath="$PROJECT_DIR$/.idea/camera_connections.iml" />
     </modules>
   </component>
 </project>
