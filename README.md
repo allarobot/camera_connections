@@ -14,8 +14,9 @@ or Python 3:
 
  
 # Installation
-$pip install -r requirements.txt
-$download code
+1.install packages
+>$pip install -r requirements.txt
+2.download code of this repo
 
 # How to use it
 option 1. launch program manually 
