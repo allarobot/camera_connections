@@ -1,12 +1,14 @@
-a simple HMI with basler camera
+A simple HMI with basler camera
 
 # Prerequisites
 1. install python37
 2. plug pylon camera 
 3. install wiringPi
 > sudo apt install python python3 python-pip python3-pip
-Python 2: sudo python -m pip install odroid-wiringpi
-Python 3: sudo python3 -m pip install odroid-wiringpi
+Python 2: 
+> sudo python -m pip install odroid-wiringpi
+or Python 3: 
+> sudo python3 -m pip install odroid-wiringpi
 
  
 # Installation
