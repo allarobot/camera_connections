@@ -1,4 +1,3 @@
-
 from basler_camera import Basler
 from HMI import MainWindow
 from PyQt5.QtWidgets import QApplication
@@ -35,17 +34,9 @@ class Win(MainWindow):
         self.refresh(self._img)
 
 
-class APP(MainWindow):
-    def __init__(self,parent=None):
-        super(APP,self).__init__(parent)
-        self.cam = Basler()
-
-    def savePicture(self):
-        super(APP,self).savePicture()
-        self.img = self.cam.get_image()
-
     def configure(self):
         pass
+
 
     def setLed(self):
         pass
